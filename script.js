@@ -4,7 +4,7 @@ new Vue({
 	el: "#app",
 	data: {
 		// массив с рыбками
-		fish: ["🐟", "🐠", "🐡", "🪼", "🐙", '🦑', '🐬', '🐳', '🐋', '🦑', '🦈', '🧜‍♀️', '🧜'],
+		fish: ["🐟", "🐠", "🐡", "🐙", '🦑', '🐬', '🐳', '🐋', '🦑', '🦈', '🧜‍♀️', '🧜'],
 		// устанавливаем, какие рыбки будут двигаться на разных планах и с какой скоростью
 front: [{ 'fish': '🐠', 'style': { top: '10%', animationDuration: '30s' } }],
 		middle: [{ 'fish': '🐡', 'style': { top: '47%', animationDuration: '25s' } }],
@@ -29,7 +29,7 @@ methods: {
 				top: Math.floor(Math.random() * 100) + "%", animationDuration: Math.floor(Math.random() * 30 + 10) + "s" } 
 			};
 
-			// добавляем рыбку на нужный слой
+			// добавляем рыбу на нужный слой
 this.layers[layer] === "front" && this.front.push(object);
 			this.layers[layer] === "middle" && this.middle.push(object);
 			this.layers[layer] === "back" && this.back.push(object);
