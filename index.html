@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+<meta charset="UTF-8">
+<title>Аквариум</title>
+<!-- подключаем стили -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<!-- добавляем элементы -->
+
+	<div>
+        <!-- кнопка для добавления рыбки -->
+        <button v-on:click="addFish">Добавить рыбку</button>
+        
+        <!-- задний фон -->
+        <div class="layer back">
+        <!-- рыбки -->
+        <div v-for="fish in back" class="fish" :style="fish.style">{{fish.fish}}</div>
+        <!-- кораллы и раковины -->
+        <div class="coral">🪸🎍🐚🪸🎍🐚🪸🎍🐚🪸🎍</div>
+        </div>
+        
+        <!-- элементы посередине -->
+        <div class="layer middle">
+        <!-- рыбки -->
+        <div v-for="fish in middle" class="fish" :style="fish.style">{{fish.fish}}</div>
+        <!-- растения -->
+        <div class="coral">🌿🌱🌿🌱🌿🌱🌿🌱🌿</div>
+        </div>
+        
+        <!-- передний план -->
+        <div class="layer front">
+        <!-- рыбки -->
+        <div v-for="fish in front" class="fish" :style="fish.style">{{fish.fish}}</div>
+        </div>
+        </div>
+	<!-- подключаем скрипт -->
+	<script src="script.js"></script>
+
+</body>
+</html>
+
