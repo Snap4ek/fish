@@ -1,124 +1,100 @@
-/* задаём стиль кнопки */
-button {
-    /* абсолютное позиционирование */
-    position: absolute;
-    /* определяем порядок слоёв элементов на странице */
-    z-index: 2;
-    /* отступы для кнопки */
-    margin: 1rem;
-    /* размер шрифта текста на кнопке */
-    font-size: 1.2rem;
-    /* внутренние отступы для текста на кнопке */
-    padding: .5rem 1rem;
-    /* шрифт для текста на кнопке */
-    font-family: sans-serif;
-    /* меняем курсор при наведении на кнопку */
-    cursor:pointer;
-    /* фоновый цвет кнопки с прозрачностью 60% */
-    background: #009dff60;
-    /* тень для кнопки */
-    box-shadow: 0 0 .25rem 0 ;
-    /* границу для кнопки */
-    border: 4px solid #009dff;
-    /* радиус скругления углов кнопки */
-    border-radius: 4px;
-    /* при наведении на кнопку фоновый цвет меняется на другой с прозрачностью 90% */
-    &:hover{
-       background: #009dff90;
-    }
-     /* при нажатии кнопки её размер увеличивается на 10% */
-     &:active{
-       transform: scale(1.1);
-    }
-}
 body {
-    /* отступы фоновой картинки */
-    margin: 0;
+  /* отступы фоновой картинки */
+  margin: 0;
 }
-.back {
-    /* цвет заднего фона */
-    background: #009dff30;
-    /* размер элементов фона */
-    font-size: 2rem;
-    /* картинка заднего фона */
-    background-image: url("https://thecode.media/wp-content/uploads/2024/01/sea_bottom.png");
-  
-      /* картинка полностью заполняет задний план без изменения пропорций */
-      background-size: cover;
-}  
+
 .coral {
-    /* отступы снизу */
-    bottom: -4rem;
-    /* отступы слева */
-    left: -3rem;
-    /* абсолютное позиционирование */
-    position: absolute;
-    /* размер шрифта */
-    font-size: 12rem;
-    /* запрет на перенос на новую строку */
-    white-space: nowrap;
-    /* расстояние между символами */
-    letter-spacing: 2rem;
-    }
+/* отступы снизу */
+bottom: -4rem;
+/* отступы слева */
+left: -3rem;
+/* абсолютное позиционирование */
+position: absolute;
+/* размер шрифта */
+font-size: 12rem;
+/* запрет на перенос на новую строку */
+white-space: nowrap;
+/* расстояние между символами */
+letter-spacing: 2rem;
+}
+
+.back {
+  /* цвет заднего фона */
+  background: #009dff30;
+  /* размер элементов фона */
+  font-size: 2rem;
+  /* картинка заднего фона */
+  background-image: url("https://thecode.media/wp-content/uploads/2024/01/sea_bottom.png");
+
+    /* картинка полностью заполняет задний план без изменения пропорций */
+    background-size: cover;
+}
 .back .coral {
-    /* отступы слева */
-    left: 2rem;
-    /* отступы снизу */
-    bottom: -5rem;
-    /* размер шрифта */
-    font-size: 17rem;
-    /* запрет на перенос на новую строку */
-    white-space: nowrap;
-    /* расстояние между символами */
-    letter-spacing: 5rem;
-    }
-    
+/* отступы слева */
+left: 2rem;
+/* отступы снизу */
+bottom: -5rem;
+/* размер шрифта */
+font-size: 17rem;
+/* запрет на перенос на новую строку */
+white-space: nowrap;
+/* расстояние между символами */
+letter-spacing: 5rem;
+}
+
 .middle {
-    /* цвет фона */
-    background: #009dff30;
-    /* размер шрифта */
-    font-size: 4rem;
-    }
-    
+/* цвет фона */
+background: #009dff30;
+/* размер шрифта */
+font-size: 4rem;
+}
+
 .front {
-    /* цвет фона */
-    background: #009dff30;
-    /* размер шрифта */
-    font-size: 6rem;
-    }
-    
+/* цвет фона */
+background: #009dff30;
+/* размер шрифта */
+font-size: 6rem;
+}
+
 .layer {
-    /* ширина 100% */
-    width: 100%;
-    /* высота 100% */
-    height: 100%;
-    /* абсолютное позиционирование */
-    position: absolute;
-    /* скрывать содержимое, если оно выходит за пределы */
-    overflow: hidden;
-    }
-    
+/* ширина 100% */
+width: 100%;
+/* высота 100% */
+height: 100%;
+/* абсолютное позиционирование */
+position: absolute;
+/* скрывать содержимое, если оно выходит за пределы */
+overflow: hidden;
+}
+
 .fish {
-    /* анимация длительностью 17 секунд с линейным типом и бесконечным повтором */
-    animation: example 17s linear infinite;
-    /* абсолютное позиционирование */
-    position: absolute;
-    }
-    
+/* анимация длительностью 17 секунд с линейным типом и бесконечным повтором */
+animation: example 17s linear infinite;
+/* абсолютное позиционирование */
+position: absolute;
+}
+
+
 @keyframes example {
+
 0% {
+
 left: 0;
 transform: scaleX(-1);
 }
+
 50% {
+
 left: 100%;
 transform: scaleX(-1);
 }
 51% {
+
 transform: scaleX(1);
 }
+
 100% {
+
 left: 0;
 }
 }
-    
